@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, th, td, ul, p {
+    color: #FFFFFF;
+}	
+.Header{
+	
+    background-color: #9e9e9e;
+}
+.soc_menu{
+	display: inline-block;
+    padding: 0;
+    float: right;
+    padding-bottom: 5px;
+}
+.datos{
+	background-color: #81d4fa;
+}
+.btn_enviar{
+
+    float: right;
+
+}

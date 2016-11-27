@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{%load static%}
+
+<html>
+
+<head>
+	<title>
+		{%block titulo%}Roxsoft{%endblock titulo%}
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+	
+	{%block head%} {%endblock head%}
+</head>
+
+<body>
+
+
+	<div class="row">
+		<div class="col s12">
+			<div id="social col s6 ">
+				<ul class="soc_menu">
+					<li>
+						<a class="padded" href="https://www.facebook.com/Ivanlopz11" target="_blank"><img src="http://image005.flaticon.com/1/svg/124/124010.svg" alt="30" width="30"></a>
+						<a class="padded" href="https://twitter.com/Ivanlopz2611" target="_blank"><img src="http://image005.flaticon.com/1/svg/124/124021.svg" alt="30" width="30"></a>
+						<a class="padded" href="https://www.youtube.com/channel/UCKmJNJACHRLTauF8131V3_g" target="_blank"><img src="http://image005.flaticon.com/1/svg/124/124015.svg" alt="30" width="30"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col s6">
+				<a class="padded" href="#" target="_blank"><img src="http://www.upp.edu.mx/front/wp-content/uploads/2014/06/escudos3.png" ></a>
+			</div>
+		</div>		
+	</div>
+	
+	<nav class=" grey lighten-1 navbar-fixed">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">ESCUELA VASCONCELOS</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#">Inicio</a></li>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Primaria</a></li>
+					<li><a href="#">Secundaria</a></li>
+					<li><a href="#">Preparatoria</a></li>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#contact">Contácto</a></li>		
+			</ul>
+		</div>
+	</nav>	
+
+	{%block content%}
+	
+	
+
+	{%endblock content%}
+     <!--Import jQuery before materialize.js-->
+	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	 {%block scripts%}
+	 {%endblock scripts%}
+</body>
+
+</html>
