@@ -10,28 +10,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}">
-
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+	<link rel="stylesheet" type="text/css" href="{%static 'css/materialize.min.css'%}">
+	<!--<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}">-->
+	
 	
 	{%block head%} {%endblock head%}
 </head>
 
 <body>	
-	<nav class="N/A transparent  navbar-fixed">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo blue-text text-darken-2">Roxsoft</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down blue-text text-darken-2">
-					<li><a href="#" class="blue-text text-darken-2">Inicio</a></li>
-					<li><a href="#" class="blue-text text-darken-2">Servicios</a></li>
-					<li><a href="#" class="blue-text text-darken-2">Portafolio</a></li>
-					<li><a href="#" class="blue-text text-darken-2">¿Quiénes somos?</a></li>
-					<li><a href="#contact" class="blue-text text-darken-2">Contácto</a></li>		
-			</ul>
-		</div>
-	</nav>	
+	<div class="navbar-fixed">
+		<nav><!--Menu de pagina (header)-->
+			<div class="nav-wrapper cyan lighten-1">
+			 <a href="#" class="brand-logo">Roxsoft</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+ 					<ul class="right hide-on-med-and-down">
+				        <li><a href="#"><i class="material-icons left">home</i>Inicio</a></li>
+				        <li><a href="#"><i class="material-icons left">settings</i>Servicios</a></li>
+				        <li><a href="#"><i class="material-icons left">work</i>Portafolio</a></li>
+				        <li><a href="#"><i class="material-icons left">person_pin</i>¿Quienes somos?</a></li>
+				        <li><a href="#"><i class="material-icons left">contacts</i>Contácto</a></li>
+				    </ul>
+				    <ul class="side-nav" id="mobile-demo" style="transform: translateX(0px);">
+				        <li><a href="#"><i class="material-icons left cyan-text">home</i>Inicio</a></li>		
+				        <li><a href="#"><i class="material-icons left cyan-text">settings</i>Servicios</a></li>
+				        <li><a href="#"><i class="material-icons left cyan-text">work</i>Portafolio</a></li>
+				        <li><a href="#"><i class="material-icons left cyan-text">person_pin</i>¿Quienes somos?</a></li>
+				        <li><a href="#"><i class="material-icons left cyan-text">contacts</i>Contácto</a></li>
+				    </ul>
+			</div>
+		</nav>
+ 	</div>
+
+	 	
 
 	{%block content%}
 	
@@ -39,8 +49,13 @@
 
 	{%endblock content%}
      <!--Import jQuery before materialize.js-->
-	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	 <script type="text/javascript" src="{%static 'js/jquery-2.2.4.js'%}"></script>
+	 <script type="text/javascript" src="{%static 'js/materialize.min.js'%}"></script>
+	 <script type="text/javascript">
+	 	$(document).ready(function(){
+      		$(".button-collapse").sideNav();
+    	});
+	 </script>
 	 {%block scripts%}
 	 {%endblock scripts%}
 </body>

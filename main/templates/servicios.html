@@ -1,0 +1,57 @@
+{%extends 'home.html' %} 
+{%load static%}
+{% block content%}
+
+<div class="section white">
+    <div class="row container">
+       <h1 class="header center-align with-subtitle black-text text-darken-2">Servicios</h1>
+         <h6 class="subtitle center-align  blue-text text-darken-2">ROXSOFT ofrece una gran gama de servicios utilizando lo ultimo en tecnología.</h6>
+         <br>
+       	<div class="row three-paragraphs center-align">
+      		<div class="col m4 s12">
+	        	<i class="large material-icons">android</i>
+	        	<b><h6 class=" black-text text-darken-2">Desarrollo movil</h6></b>
+	        	<p class=" blue-text text-darken-2">Desarrollamos aplicaciones moviles para plataforma Android interactivas y con atractivos diseños para tu empresa o producto.</p>         
+      		</div>
+      		<div class="col m4 s12">
+		        <i class="large material-icons">airplay</i>
+		        <b><h6 class=" black-text text-darken-2">Desarrollo WEB</h6></b>
+		        <p class=" blue-text text-darken-2">
+		          Construimos paginas para tu negocio ó empresa acompañado de sistemas para optimizar tus procesos.
+		        </p>         
+	      	</div>
+      		<div class="col m4 s12">
+		        <i class="large material-icons">work</i>
+		        <b><h6 class=" black-text text-darken-2">Consultoría</h6></b>
+		        <p class=" blue-text text-darken-2">
+		          Planes de ayuda para utilizar y escalar la tecnología implantada dentro tu empresa.
+		        </p>         
+	     	</div>
+    	</div>  
+    	<div class="row three-paragraphs center-align">
+	      	<div class="col m4 s12">
+	        <i class="large material-icons">perm_identity</i>
+	        <b><h6 class=" black-text text-darken-2">Cursos</h6></b>
+	        <p class=" blue-text text-darken-2">
+	          Impartimos cursos sobre como utilizar ultimas técnologias
+	        </p>         
+	      	</div>
+	      	<div class="col m4 s12">
+	        <i class="large material-icons">settings</i>
+	        <b><h6 class=" black-text text-darken-2">Mantenimiento</h6></b>
+	        <p class=" blue-text text-darken-2">
+	          Realizamos mantenimiento correctivo o evolutivo sobre aplicaciones WEB y Movil.
+	        </p>         
+	      	</div>
+	    </div>
+  	</div> 
+    </div>
+{%endblock content%}
+
+{%block scripts%}
+<script type="text/javascript">
+	 	$(document).ready(function(){
+      		$('.slider').slider({full_width: true,indicators:true});
+    	});
+	 </script>
+{%endblock scripts%} 
