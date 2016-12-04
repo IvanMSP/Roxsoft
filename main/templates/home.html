@@ -1,149 +1,82 @@
 {%extends 'base.html' %} 
 {%load static%}
+{%block head%}
+	<link href="{%static 'css/full-slider.css'%}" rel="stylesheet">
+{%endblock head%}
 {% block content%}
 
+<!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-<!-- Slider FullScreen-->
- 
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://k32.kn3.net/taringa/F/4/A/E/8/7/ACKTRY/3D7.jpg');">
+                	<!--<img class="fill" src="http://planestataldedesarrollo.hidalgo.gob.mx/assets/images/slider/definitiva_2.png">-->
 
-<div class="slider fullscreen" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-								    <ul class="slides">
-								      <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
-								        <img src="http://www.1zoom.me/big2/1000/314083-dikemoon.jpg"> <!-- random image -->
-								        <div class="caption left-align" style="opacity: 0; transform: translateX(-100px) translateY(0px);">
-								          <h2 class="white-text">¡Aprende!</h2>
-								          <h5 class="white-text">¡Desarrolla tus skills como developer!</h5>
-								        </div>
-								      </li>
-								      <li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
-								        <img src="http://dreamix.eu/blog/wp-content/uploads/2015/06/hi-tech-apple-keyboard-mouse-hd-wallpaper-1508x706_c.jpg"> <!-- random image -->
-								        <div class="caption left-align" style="opacity: 0; transform: translateX(-100px) translateY(0px);">
-								          <h2 class="white-text">¡Crear!</h2>
-								          <h5 class="white-text">Es lo de hoy</h5>
-								        </div>
-								      </li>
-								      <li class="active" style="opacity: 1; transform: translateX(0px) translateY(0px);">
-								      	 <img src="http://www.1zoom.me/big2/1000/314083-dikemoon.jpg"> <!-- random image -->
-								      	 <div class="caption left-align" style="opacity: 1; transform: translateX(0px) translateY(0px);">
-								          <h2 class="white-text">¡Trabaja en equipo!</h2>
-								          <h5 class="white-text">Comparte conocimientos</h5>
-								        </div>
-								      </li>
-					    			</ul>
 
-<div class="section white">
-    <div class="row container">
-       <h1 class="header center-align with-subtitle black-text text-darken-2">Servicios</h1>
-         <h6 class="subtitle center-align  blue-text text-darken-2">ROXSOFT ofrece una gran gama de servicios utilizando lo ultimo en tecnología.</h6>
-         <br>
-       	<div class="row three-paragraphs center-align">
-      		<div class="col m4 s12">
-	        	<i class="large material-icons">android</i>
-	        	<b><h6 class=" black-text text-darken-2">Desarrollo movil</h6></b>
-	        	<p class=" blue-text text-darken-2">Desarrollamos aplicaciones moviles para plataforma Android interactivas y con atractivos diseños para tu empresa o producto.</p>         
-      		</div>
-      		<div class="col m4 s12">
-		        <i class="large material-icons">airplay</i>
-		        <b><h6 class=" black-text text-darken-2">Desarrollo WEB</h6></b>
-		        <p class=" blue-text text-darken-2">
-		          Construimos paginas para tu negocio ó empresa acompañado de sistemas para optimizar tus procesos.
-		        </p>         
-	      	</div>
-      		<div class="col m4 s12">
-		        <i class="large material-icons">work</i>
-		        <b><h6 class=" black-text text-darken-2">Consultoría</h6></b>
-		        <p class=" blue-text text-darken-2">
-		          Planes de ayuda para utilizar y escalar la tecnología implantada dentro tu empresa.
-		        </p>         
-	     	</div>
-    	</div>  
-    	<div class="row three-paragraphs center-align">
-	      	<div class="col m4 s12">
-	        <i class="large material-icons">perm_identity</i>
-	        <b><h6 class=" black-text text-darken-2">Cursos</h6></b>
-	        <p class=" blue-text text-darken-2">
-	          Impartimos cursos sobre como utilizar ultimas técnologias
-	        </p>         
-	      	</div>
-	      	<div class="col m4 s12">
-	        <i class="large material-icons">settings</i>
-	        <b><h6 class=" black-text text-darken-2">Mantenimiento</h6></b>
-	        <p class=" blue-text text-darken-2">
-	          Realizamos mantenimiento correctivo o evolutivo sobre aplicaciones WEB y Movil.
-	        </p>         
-	      	</div>
-	    </div>
-  	</div> 
-    </div>
+                	<!--http://img0.es.gtsstatic.com/wallpapers/c9e5386e2acdcbcbbcad4ddc273e6e10_large.jpeg-->
+                	
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="sletrero animated zoomInUp">Hazlo posible con ROXSOFT</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{%static 'img/1.jpg'%}');">
+                	<!--<img class="img-responsive fill" src="http://www.practicavida.es/wp-content/uploads/2015/02/NO-PAIN-NO-GAIN.jpg">-->
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="sletrero animated zoomInDown">Apoyando al ecosistema emprendedor en Pachuca</h2>
+                </div>
+            </div>
 
-<!--TECNOLOGIAS-->
-	<section id="tech" class="parallax-container" style="width: 100%; height: auto;" >
-    	<div class="parallax"><img class="responsive-img" src="http://www.kptmcorp.com/plugins/elastic/imgdata/FILE_A7020A-CCD6D5-E861BF-FB53D3-BD02BC-2C5204.jpg" width="100%" style="opacity: 0.9;"></div>
-    	  	<div class="container">
-	    	  	<br>
-	   			<div class="row three-paragraphs center-align">
-	      		<div class="col m4 s12">
-		        	<img src="https://www.djangoproject.com/s/img/logos/django-logo-negative.png" height="120px" width="200px">        
-	      		</div>
-	      		<div class="col m4 s12">
-		        <img src="https://carlosazaustre.es/blog/content/images/2015/06/Angular.jpg" height="150px" width="150px">
-		      	</div>
-		      	<div>
-	      		<img src="http://cdn.wallpapersafari.com/54/0/76bKaN.jpg" height="150px" width="150px">
-		      	</div>
-	    		</div> 
-		    	<div class="row three-paragraphs center-align">
-		      		<div class="col m4 s12">
-			        <img src="http://1.bp.blogspot.com/-W2603vgjlyI/TkfvenD2-3I/AAAAAAAAACs/zF9y-FAFOCQ/s1600/php+wallpaper11.jpg" height="130px" width="180px">        
-		      		</div>
-		      		<div class="col m4 s12">
-			        <img src="http://www.1wallpaperhd.com/wp-content/uploads/Android/FTP1/2560x1440/Simple%20Android%20logo%20wallpapers%20HD%202560x1440.jpg" height="150px" width="150px">
-			      	</div>
-			      	<div class="col m4 s12">
-			        <img src="http://2.bp.blogspot.com/-YxUEEc9cOkM/VcOhn37MLaI/AAAAAAAAAIQ/WqRaE9P-Sy0/s200/js-logo.png" height="150px" width="150px">
-			      	</div>
-		    	</div>   
-  			</div>
-	</section>
 
-<footer class="page-footer cyan darken-3 center-align">
-				   <div class="container">
-				      <div class="row center-align">
-				        <div class="col l12 s12">
-				          <h5 class="white-text">Roxsoft</h5>
-				          <p class="grey-text text-lighten-4">Ayudando al emprendedor</p>
-				          <h5 class="white-text">Redes Sociales</h5>
-			                <ul>
-			                  	<a class="padded" href="https://twitter.com/MSTCUPPachuca" target="_blank"><img src="http://image005.flaticon.com/1/svg/124/124021.svg" alt="30" width="30"></a>
-			                  	<a class="padded" href="https://www.instagram.com/mstcupp/" target="_blank"><img src="http://image005.flaticon.com/1/svg/124/124032.svg" alt="30" width="30"></a>
-			                  	<a class="padded" href="https://www.youtube.com/channel/UCJMFnqfIDK_tJwd02GBWFVg" target="_blank"><img src="http://image005.flaticon.com/1/svg/124/124015.svg" alt="30" width="30"></a>
-			                  	<a class="padded" href="https://www.facebook.com/MSTCUPPachuca/" target="_blank"><img src="http://image005.flaticon.com/1/svg/124/124010.svg" alt="30" width="30"></a>
-		                      
-			                </ul>
-				        </div>		            	
-				      </div>
-				   </div>
-				   <div class="footer-copyright cyan">
-				      <div class="container">
-				      	<div class="row">
-				      		<div class="col l12 s12">
-				      			 Made by <a class="white-text text-lighten-3" href="">Roxsoft</a>
-				      		</div>
-				      		
-				      	</div>
-				      </div>
-				    </div>
-			</footer>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://3.bp.blogspot.com/-Rnu-vLpd450/VHejWUmmoTI/AAAAAAAAAhQ/h1XSc8CZ6uc/s1600/apple_desktop-wallpaper-1920x1080.jpg');">
+                	<!--<img class="img-responsive fill" src="http://res.cloudinary.com/db79cecgq/image/upload/c_crop,h_720,w_1440,y_91/c_fill,h_800,w_1600/v1407952710/MejoresCancionesGimnasioNoticias01.jpg">-->
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="sletrero animated zoomIn">Cursos de Tecnologías</h2>
+                </div>
+            </div>
+        </div>
 
-</div>
-  
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+    
+
+
+   <!--Contácto-->
+   <div class="jumbotron">
+		<h2>Servicios</h2>
+		<p>...</p>
+		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+   </div>
+
+
 {%endblock content%}
 
 {%block scripts%}
-<script type="text/javascript">
-	 	$(document).ready(function(){
-      		$('.slider').slider({full_width: true,indicators:false});
-      		$('.parallax').parallax();
-    	});
+<script>
+    $('.carousel').carousel({
+        interval: 3000 //changes the speed
+    })
 </script>
 {%endblock scripts%} 
