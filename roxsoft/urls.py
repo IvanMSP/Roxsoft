@@ -21,7 +21,7 @@ from main import urls as UrlsMain
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^',include(UrlsMain,namespace="home")),
+    url(r'^',include(UrlsMain,namespace="homes")),
     url(
     	regex=r'^media/(?P<path>.*)$',
     	view=serve,
