@@ -1,0 +1,30 @@
+{%load static%}
+{% block content%}
+<!-- HACK US CONTENT -->
+<div id="basic-waypoint" class="bgimg-3" style=" background-image: url('{% static 'img/parallax2.jpg' %}'); min-height: 60%;">
+  <div style="color:#ddd;text-align:center;padding:80px 80px;text-align: center;">
+    <div class="row">
+      <div class="col-sm-3 col-md-3 wow bounceIn" data-wow-duration="2s">
+        <img src='{% static "img/code.png" %}' width="100px" height="100px">
+        <h4 style="letter-spacing: 5px;">Lineas de codigo</h4>
+        <div class="odometer odometer-theme-default" id="odometer" style="font-size: 40px; ">0</div>
+      </div>
+      <div class="col-sm-3 col-md-3 wow bounceIn" data-wow-duration="2s">
+        <img src='{% static "img/trofeo.png" %}' width="100px" height="100px">
+        <h4 style="letter-spacing: 5px;">Calidad en desarrollo</h4>
+        <div class="odometer odometer-theme-default" id="odometerTech" style="font-size: 40px;">50</div>%
+      </div>
+      <div class="col-sm-3 col-md-3 wow bounceIn" data-wow-duration="2s">
+        <img src='{% static "img/juegos.png" %}' width="100px" height="100px">
+        <h4 style="letter-spacing: 5px;">Juegos terminados</h4>
+        <div class="odometer odometer-theme-default" id="odometerJuegos" style="font-size: 40px;">0</div>
+      </div>
+      <div class="col-sm-3 col-md-3 wow bounceIn" data-wow-duration="2s">
+        <img src='{% static "img/pizza.png" %}' width="100px" height="100px">
+        <h4 style="letter-spacing: 5px;">Pizzas deboradas</h4>
+        <div class="odometer odometer-theme-default" id="odometerHoras" style="font-size: 40px;">0</div
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock content%}

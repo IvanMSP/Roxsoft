@@ -1,0 +1,41 @@
+{%load static%}
+{% block content%}
+<!-- ABOUT US CONTENT-->
+<div id="nosotros" style="position:relative;">
+  <div  style="color:#ddd;background-color:#282E34;padding:120px 50px;text-align: left;">
+      <section class="wow fadeInDown" data-wow-duration="2s">
+        <div class="container" id="about" style="margin-top: 3%"  class="wow bounceInUp">
+        <div class="row ">
+          <div class="col-sm-4 col-md-4">
+            <h2 style="text-align:center; letter-spacing: 5px;">¿Quiénes Somos?</h2>
+            <p style="letter-spacing: 5px;">RoxSoft es un grupo de trabajo dedicado a emplear las ultimas tecnologías para desarrollar tus proyectos sea cual sea entorno. </p>
+            <p style="letter-spacing: 5px;">Nuestro compromiso es emprender como empresa en Pachuca entregando los mejores servicios en calidad y diseño generando satisfacción en nuestros clientes y cumpliendo las expectativas del producto. </p>
+            <hr>
+            <p><i>«Los mejores programadores no son un poco mejores que los buenos. La verdad es que son un orden de magnitud mejores, medidos en cualquier estándar: creatividad conceptual, velocidad, ingenuidad de diseño o capacidad de resolver problemas»</i><p>
+            <center>-Randall E. Stross</center>
+          </div>
+        <div class="col-sm-4 col-md-4">
+          <img id="redondo" class="img" src='{% static "img/edgar.jpg" %}'>
+            <div class="pieImagen">
+              <span style="font-family: 'Bungee',serif;">Fundador de RoxSoft</span>
+              <p style=" color:white; letter-spacing: 5px; margin-top: 2%; ">Front-end & Back-end WEB Developer</p>
+            </div>
+        </div>
+          <div class="col-sm-4 col-md-4">
+            <img id="redondo" class="img" src='{% static "img/ivan.jpg" %}'>
+            <div class="pieImagen">
+            <span style="font-family: 'Bungee',serif;">Co-Fundador de RoxSoft</span>
+              <p style=" color:white; letter-spacing: 5px; margin-top: 2%; ">Front-end & Back-end Mobile Developer</p>
+            </div>
+          </div>
+            <div class="col-sm-4 col-md-8">
+              <img id="redondo" class="img" src='{% static "img/gio.jpg" %}'>
+                <div class="pieImagen2">
+                  <span style="font-family: 'Bungee',serif;">Junior programmer</span>
+                  <p style=" color:white; letter-spacing: 5px; margin-top: 0%; ">Web apps & Mobile apps</p>
+                </div>
+            </div>
+      </section>
+    </div>
+</div>      
+{% endblock content%}

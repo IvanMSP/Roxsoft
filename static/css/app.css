@@ -24,7 +24,7 @@ a.navbar-brande{
 }
 div.navbar-collapse.collapse.navbar-right ul li a{
      font-size: 130%;
-     font-family: 'Bungee',serif;
+     font-family:'Bungee',serif;
      color: white;
  }
 
@@ -35,22 +35,26 @@ div.navbar-collapse.collapse.navbar-right ul li a:hover{
 
 .animated.r:hover{
     animation:rubberBand;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 5s;
 }
 .animated:hover{
-    color: orangered;
+    color:cyan;
 }
 
 
 #footer{
       background-color:cadetblue;
-      font-family: 'Bungee',serif;
-      color: white;
+    
+      
 }
-h3.footertext{
+#footer h3.footertext{
+    font-family: 'Bungee',serif;
+    color: white;
     text-align: center;
 }
 h4.footertext{
+    font-family: 'Bungee',serif;
+    color: white;
     text-align: center;
 }
 div.footer1{

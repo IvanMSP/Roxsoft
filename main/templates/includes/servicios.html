@@ -1,0 +1,86 @@
+  {%load static%}
+  {% block content%}
+  <!--SERVICES CONTENT-->
+  <div id="serviciosDiv" style="color: #777;background-color:white;padding:70px 20px;text-align: center;">
+  	<section class="wow bounceIn" data-wow-duration="2s">
+	  <h2 style="text-align:center; color: #282E34; letter-spacing: 5px;">Servicios</h2>
+	  <hr style="background-color: #ADD8e6;color: #ADD8E6;height: 4px;width: 40%; border:0">
+	  <h4 class="" style="letter-spacing: 5px; text-align: center; color:cadetblue;">Los mejores servicios para ti. </h4><br>
+		 <div class="row">
+			<div class="col-sm-3 col-md-2"><img id="redondoIcons" class="img serviciosAnimated" src='{% static "img/diseñoMovil.png" %}'></div>
+			<div class="col-sm-1 col-md-4"> <b><h3>Desarrollo Movil</h3></b><p style=" letter-spacing: 5px; color: black;">Desarrollamos aplicaciones móviles para plataforma Android interactivas y con atractivos diseños para tu empresa, producto o idea sin importar el rubro o tamaño de la aplicación.</p></div>
+			<div class="col-sm-3 col-md-2"><img id="redondoIcons" class="img serviciosAnimated" src='{% static "img/diseñoWeb.png" %}'></div>
+			<div class="col-sm-1 col-md-4"><b><h3>Desarrollo Web</h3></b><p style=" letter-spacing: 5px; color: black;"> Desarrollamos desde páginas web para promocionar tu negocio ó empresa hasta sistemas web para optimizar y realizar actividades administrativas.</p></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-md-2"><img id="redondoIcons" class="img serviciosAnimated" src='{% static "img/consultoria.png" %}'></div>
+			<div class="col-sm-1 col-md-4"> <b><h3>Cursos</h3></b><p style=" letter-spacing: 5px; color: black">Impartimos cursos sobre cómo utilizar últimas tecnologías.</p></div>
+			<div class="col-sm-3 col-md-2"><img id="redondoIcons" class="img serviciosAnimated" src='{% static "img/cursos.png" %}'></div>
+			<div class="col-sm-1 col-md-4"> <b><h3>Consultorias</h3></b><p style=" letter-spacing: 5px; color:black"> Apoyamos tu idea o proyecto con asesorías sobre que tecnología utilizar para y cómo implementarla.</p></div>
+		</div>
+	  <br>
+	</section>
+  </div>
+<div id="desarrolloDiv" style="background-color:#E6E6E6;padding:180px 80px;;">
+		<section class="wow fadeInLeft" data-wow-duration="2s">
+			<div class="row">
+		    	<div class="col-sm-6 col-md-6">
+			    	 <h2 style=" letter-spacing: 5px;">Diseño Web responsivo</h2>
+			    	 <br>
+			    	 <p style=" letter-spacing: 5px; font-size: 18px;">Adaptamos las dimensiones del contenido Web mostrando los elementos de una forma ordenada y optimizada sea cual sea el soporte del diseño web y visualizarlos desde cualquier plataforma de escritorio ó móvil."</p>
+		  		</div>
+				<div class="col-sm-6 col-md-6">
+    				<div class="row">
+    					<div class="col-sm-6 col-md-6">
+    						<img class="img-responsive" src='{% static "img/web.png" %}' width="300px" height="300px">
+    					</div>
+    					<div class="col-sm-6 col-md-6">
+    						<img class="img-responsive"  src='{% static "img/telefono.png" %}' width="300px" height="300px">
+    					</div>
+    				</div>
+    			</div>
+			</div>
+		</section>
+</div>
+<div style="color:#ddd;background-color:darkcyan;padding:90px 80px;text-align: center;">
+		<section class="wow fadeInRight" data-wow-duration="2s">
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+    				<img class="img-responsive" src='{% static "img/apps.png" %}' width="470px" height="400px">					
+    			</div>
+    			<div class="col-sm-6 col-md-6">
+			    	 <h2 style="letter-spacing: 5px;">Haz crecer tu idea o negocio</h2>
+			    	 <hr>
+			    	 <p style=" letter-spacing: 5px; font-size: 18px;">En Roxsoft desarrollamos aplicaciones sin importar el tamaño rubro o dificultad que este tenga. Cuente con su propia aplicación movil, acercate con nostros platicanos tu idea y la construiremos a tus necesidades.</p>
+			    	 <br><button style="color:black;" id="contactanos" type="button" class="contactanos btn btn-inverse btn-lg">Contactanos</button>
+			    	 <br>
+		  		</div>
+			</div>
+		</section>
+</div>
+<!-- Modal -->
+<!--<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <!--<div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Contactanos</h4>
+      </div>
+      <div class="modal-body">
+         <form  action="prueba.php" method="POST" enctype="multipart/form-data">
+         <input type="text" class="form-control" id="nombre" placeholder="Nombre o Empresa"><br>
+         <input type="text" class="form-control" id="correo" placeholder="Correo electronico"><br>
+         <textarea class="form-control"></textarea>
+         <br>
+         <center><input type="submit" id="enviar" class="btn btn-success btn-lg"></center>
+         </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>-->
+{% endblock content %}
