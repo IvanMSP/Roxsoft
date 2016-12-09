@@ -2,9 +2,26 @@
 {%load static%}
 {%block head%}
 	<link href="{%static 'css/full-slider.css'%}" rel="stylesheet">
+    <style type="text/css">
+    /* Paste this css to your style sheet file or under head tag */
+    /* This only works with JavaScript, 
+    if it's not present, don't show loader */
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url("{%static 'img/preload.gif' %}") center no-repeat #fff;
+    }
+    </style>
+   
 {%endblock head%}
 {% block content%}
-
+<div class="se-pre-con"></div>
 <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -26,7 +43,7 @@
                 	
                 </div>
                 <div class="carousel-caption">
-                    <h2 class="sletrero animated zoomInUp">Hazlo posible con ROXSOFT</h2>
+                    <h2 class="sletrero animatede zoomInUp">Hazlo posible con ROXSOFT</h2>
                 </div>
             </div>
             <div class="item">
@@ -35,7 +52,7 @@
                 	<!--<img class="img-responsive fill" src="http://www.practicavida.es/wp-content/uploads/2015/02/NO-PAIN-NO-GAIN.jpg">-->
                 </div>
                 <div class="carousel-caption">
-                    <h2 class="sletrero animated zoomInDown">Desarrollamos tus ideas con calidad</h2>
+                    <h2 class="sletrero animatede zoomInDown">Desarrollamos tus ideas con calidad</h2>
                 </div>
             </div>
 
@@ -46,7 +63,7 @@
                 	<!--<img class="img-responsive fill" src="http://res.cloudinary.com/db79cecgq/image/upload/c_crop,h_720,w_1440,y_91/c_fill,h_800,w_1600/v1407952710/MejoresCancionesGimnasioNoticias01.jpg">-->
                 </div>
                 <div class="carousel-caption">
-                    <h2 class="sletrero animated zoomIn">Cursos de Tecnologías</h2>
+                    <h2 class="sletrero animatede zoomIn">Cursos de Tecnologías</h2>
                 </div>
             </div>
         </div>
@@ -75,4 +92,12 @@
         interval: 5000 //changes the speed
     })
 </script>
+ <script>
+    //paste this code under head tag or in a seperate js file.
+    // Wait for window load
+    $(window).ready(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+    </script>
 {%endblock scripts%} 

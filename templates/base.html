@@ -23,7 +23,8 @@
 		{%block head%} {%endblock head%}
 	</head>
 
-	<body>	
+	<body>
+		
 	<div class="navbar-wraper">
 		<div class="container">
 			<nav class="navbar navbar-default navbar-fixed-top">
@@ -35,7 +36,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brande animated rollIn " href="#">Roxsoft</a>
+					<a class="navbar-brande animatede rollIn " href="#">Roxsoft</a>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
 					<ul class="nav navbar-nav">
@@ -75,19 +76,19 @@
 
 			   <div class="col-md-3">
                 <center>
-                  <img src="{%static 'img/facebook-box.png'%}" class="img-circle animated r" alt="the-brains">
+                  <img src="{%static 'img/facebook-box.png'%}" class="img-circle animatede r" alt="the-brains">
                 </center>
               </div>
 			  
               <div class="col-md-3">
                 <center>
-                  <img src="{%static 'img/twitter-box.png'%}" class="img-circle animated r" alt="...">
+                  <img src="{%static 'img/twitter-box.png'%}" class="img-circle animatede r" alt="...">
                 </center>
               </div>
 			  
               <div class="col-md-3">
                 <center>
-                  <img src="{%static 'img/linkedin-box.png'%}" class="img-circle animated r" alt="...">
+                  <img src="{%static 'img/linkedin-box.png'%}" class="img-circle animatede r" alt="...">
                 </center>
               </div>
             </div>
@@ -103,8 +104,8 @@
 		</div>
 	</div>
     <!-- jQuery -->
-    <script src="{%static 'js/jquery-3.1.1.js'%}"></script>
-
+		<script src="{%static 'js/jquery-3.1.1.js'%}"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->	
     <!-- Bootstrap Core JavaScript -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
 		<!--Archivo de scripts mios-->
@@ -174,6 +175,7 @@
 					}, 2000);
 			});
 		</script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>-->
 	 {%block scripts%}
 	 {%endblock scripts%}
 	</body>
