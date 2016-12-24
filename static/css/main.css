@@ -22,43 +22,22 @@ body, html {
   background-size: cover;
 }
 .caption {
+  position: absolute;
   left: 0;
-  top: 50%;
+  top: 35%;
   width: 100%;
   text-align: center;
   color: #000;
 }
 .caption span.border {
-  background-color: #111;
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
 }
-.captionTecn {
-  left: 0;
-  top:10%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.captionTecn span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 20px;
-  letter-spacing: 10px;
-}
 .pieImagen {
   left: 0;
   margin-top: 5%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.pieImagen2 {
-  left: 0;
-  margin-top: 2%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -78,6 +57,10 @@ h3 {
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
     color: #111;
+}
+h1 {
+    letter-spacing: 5px;
+    font: 50px "Lato", sans-serif;
 }
 #redondo{
     display:block;
@@ -117,24 +100,21 @@ h3 {
     -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
     -o-transition: all 500ms ease-in-out; // Opera    
     } 
-hr {
-background-color: #ADD8e6;
-color: #ADD8E6;
-height: 4px;
-width: 60%;
-}
-    
 .puntero:hover{
     cursor:pointer;
 }
-
-.serviciosAnimated:hover{
-    animation:wobble;
-    -webkit-animation-duration: 3s;
-    cursor:pointer;
-}
-
 .contactanos:hover{
     animation:pulse;
     -webkit-animation-duration: 3s;
+}
+
+.divBorde{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey
+
+}
+.cursor:hover{
+    animation:pulse;
+    -webkit-animation-duration: 2s;
 }

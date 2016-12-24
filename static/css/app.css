@@ -35,7 +35,7 @@ div.navbar-collapse.collapse.navbar-right ul li a:hover{
 
 .animatede.r:hover{
     animation:rubberBand;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 2s;
 }
 .animatede:hover{
     color:cyan;
